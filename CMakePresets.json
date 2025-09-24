@@ -1,0 +1,14 @@
+{
+    "version" : 3,
+    "configurePresets" : [
+        {
+            "name" : "dev",
+            "generator" : "Ninja",
+            "binaryDir" : "build/dev",
+            "cacheVariables" : {
+                "CMAKE_BUILD_TYPE" : "Debug",
+                "CMAKE_EXPORT_COMPILE_COMMANDS" : true
+            }
+        }
+    ]
+}
