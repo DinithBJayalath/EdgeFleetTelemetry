@@ -11,3 +11,6 @@ target_include_directories(telemetry PUBLIC include)
 
 add_executable(telequery apps/telequery.cpp)
 target_link_libraries(telequery PRIVATE telemetry)
+
+add_executable(tele-smoke apps/packet_smoke.cpp)
+target_link_libraries(tele-smoke PRIVATE telemetry)
