@@ -5,9 +5,9 @@
 
 namespace tele {
 
-    struct packet {
+    struct Packet {
         std::uint64_t timestamp;
-        std::uint32_t vehical_id;
+        std::uint32_t vehicle_id;
         double lat;
         double lon;
         float speed;
@@ -43,6 +43,6 @@ namespace tele {
         return value;
     }
 
-    void serialize(std::ostream& os, const packet& pkt);
-    bool deserialize(std::istream& is, packet& out);
+    void serialize(std::ostream& os, const Packet& pkt);
+    bool deserialize(std::istream& is, Packet& out);
 }
