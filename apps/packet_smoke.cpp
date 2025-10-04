@@ -15,7 +15,7 @@ int main() {
     std::ifstream in("data/test.log", std::ios::binary);
     Packet p{};
     while (deserialize(in, p)) {
-      // print or assert
+      // print or asserts
     }
   }
 }
